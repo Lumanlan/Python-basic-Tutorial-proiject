@@ -1,1 +1,245 @@
 
+
+while True:
+    print("Hello World")
+    print("===================================")
+    print("|                                 |")
+    print("|    Welcome to Python tutorial   |")
+    print("|                                 |")
+    print("===================================")
+    print("               Start")
+    print("               Page")
+    print("               Exit")
+    print("___________________________________")
+    Menu=str(input("Enter: ")).lower()
+    if Menu == "start":
+        Page = 1
+        break
+    elif Menu == "page":
+        Page = int(input("Enter Chapter [1/n]: "))
+        break
+    elif Menu == "exit":
+        exit()
+
+
+
+while True:
+    if Page <= 0:
+        Page = 1
+    elif Page == 1:
+        Tutorial_text = str("\n ==================== \n \n \n Welcome to Python tutorial.\nThis Tutorial will teach you the basics, enough to give you a decent gist of coding idea in python. \n    \nWhat is Python?\nA:Python is a popular programming language created by Guido van Rossum in 1991\n  \nWhy use Python?\nA:Python is a simple programming language suitable for beginners\nthere are more than one programming language in the world but python is the most simplest language to understand, \nit is not as library expansive compared to C++ programming language or more complex as Java programming language but, \nit is the easiest programming language to learn and start over.\n  \n       Page [1/19]")
+    elif Page == 2:
+        Tutorial_text = str("\n ==================== \n \n \nChapter Index \n \nPage 1-------Introduction\nPage 2-------Chapter index\nPage 3-------Chapter 1: Statement\nPage 4-5-----Chapter 2: variables\nPage 6-8-----Chapter 3: Mathematical functions\nPage 9-12----Chapter 4: list functions\nPage 13------Chapter 5: Boolean value\nPage 14-17---Chapter 6: If condition\nPage 18------Chapter 7: While loop function\nPage 19------Outro\n \n       Page [2/19] ")
+    elif Page == 3:
+        Tutorial_text = str('\n ==================== \n \n Chapter 1: Statement \n \n print("Hello World") \n \nHello world is a basic statement made to test a programming language.\nprint (Hello world) will give you an invalid syntax do not forget to put comma "" between words! \n \n print("this is an example of a valid syntax") \n print("This 2 is also another valid statement") \n print("this" "is" "also" "correct") \nprint("So","is","this") \nwhy print("print") function?\nA:It is use to display statement/variables you want users to see.  \n \n      Page [3/19]')
+    elif Page == 4:
+        Tutorial_text = str('\n ==================== \n \n Chapter 2: setting variables \n \nVariables are use to contain a data, whether it would be number or words. \n \nTo set a Variable assign a name to your variable first.\nfor example, the name of our variable is\nx\nnext is, for a variable to store data, assign a type of data you want to put into the your variable\n \nx=7 # is an example of a number variable\n \nx="name" # is an example of a words(string) variable.\n \nTo allow users to put interact, use input\nexample: name=str(input("Enter name here: "))\n the system will display\nEnter name here:  #which allows users to interact and store specific data.  \n \nNote: DO NOT FORGET TO PUT commas "" WHEN YOU WANT TO ASSIGN STRING VARIABLE OR ELSE IT WILL BECOME UNDEFINED!\nx=name # will become UNDEFINED \n \n      Page [4/19]  ')
+    elif Page == 5:
+        Tutorial_text = str('\n ==================== \n \n More examples of variable data \n \nName="John"\nAge=23\nX=156\nHello="Hello world" \n \nRules for making a variable\n1. Variable should not start with a digit\n1info="x" should be: info1="x"\n \n2. Variable must not have a special letters(except underscore _)\n$money$=111 should be: money=111\n \n3. Space are not allowed(use underscore _ instead)\ntotal score=123 should be total_score=123\n \n4. You can not use reserved keywords\nclass=01 should be _class=01\n \nNote:To check if the variable is working, try using print function\nexample: x=123\nprint(x)\nThe console should display "123" \n \nTip: # hashtag Will turn your line into a comment, and it will not run with the code itself, this is specially useful when leaving notes for yourself or others programmers.\n \n     Page [5/19] ')
+    elif Page == 6:
+        Tutorial_text = str("\n ==================== \n \n Chapter 3: Mathematical functions\n \nLike most programming language, Python also has a built-in mathematical functions\nthere are two types of number. \n \nint=whole number, the decimals will not be used.\nfloat=number that will use decimals.\n \nthis can be use to assign a data type variable: \n x=int or y=float \n \nConversely assigning string data type will turn numbers into strictly text only \nx=int \n \n         Page [6/19]")
+    elif Page == 7:
+        Tutorial_text = str("\n ==================== \n \n Math operations \n \nthere are seven math operations in python\n \n + is addition\n - is subtraction\n * is multiplication \n / is division\n % is modulus\n ** is exponential\n // is floor division \n \n Page [7/19]")
+    elif Page == 8:
+        Tutorial_text = str("\n ==================== \n \n Math operations usage examples \n \n x=20 and y=10 \n \n x+y=30\n x-y=10 \n x*y=200\n x/y=2.0 \n x%y=0 \n x**y=10240000000000 \n x//y=2 \n \n Page [8/19]")
+    elif Page == 9:
+        Tutorial_text = str('\n ==================== \n \n Chapter 4: list functions\n \nList are use to store multiple items in a single variable, the items in the list can be access or change. \n \n  The list can be created by using [] square brackets\n Example: list=[" "]\nNow, we made an empty list, let us add some items in the list variable.\n list=["apple", "Banana", "Orange"]  if we print the list\n \n print(list)\n the result would be:\n["apple", "Banana", "Orange"] \n \nNumbered list also works\nlist=[1,2,3]\n the result would be:\n print(list)\n[1,2,3]\n  \n   \n             Page [9/19]')
+    elif Page == 10:
+        Tutorial_text = str('\n ==================== \n \n Accessing specific list item\n \n list=["Apple","Banana","Orange"] \n \n To access specific item inside the list of variable, use square bracket [] to bring out specific item inside the list\n \n print(list[1]) \nThe result would be:\nBanana\nWhy Banana?\nA:The list count starts at 0 from the first list, so if we use this instead\n  \nprint(list[0])\n The result would be\nApple  \n \n             Page [10/19]')
+    elif Page == 11:
+        Tutorial_text = str('\n ==================== \n \n Changing items in list \n \n list=["Apple,"Banana","Orange"] \nprint(list) \n["Apple","Banana","Orange"]\n \n the items inside the list can be change.\n list=["Apple,"Banana","Orange"]\nprint(list)\n["Apple,"Banana","Orange"] \nlist[2]=Cherry\nprint(list)\n["Apple,"Banana","Cherry"] \n \n                         Page [11/19] ')
+    elif Page == 12:
+        Tutorial_text = str('\n ==================== \n \n Mathematical operations with list\n \nYou can also perform math with numbers inside the list items\nlist=[10,10]\n \n print(list[0] + list[1])\nresult would be:\n20\n \n or \n \n print(list[0] * list[1])\nresult would be:\n100 \n \n                  Page [12/19] ')
+    elif Page == 13:
+        Tutorial_text = str("\n ==================== \n \n Chapter 5: Boolean value\n \n Boolean is an expression of two values:\nTrue and False\n \n Boolean is useful if you want to assign how True or False value is handled by your system. \n \nprint(3>4)\nResult: False\nprint(3==3)\nResult: True\nprint(100>=70)\nResult: True \n \n                  Page [13/19]")
+    elif Page == 14:
+        Tutorial_text = str("\n ==================== \n \n Chapter 6: If condition \n \n If condition will only take Boolean functions that is set to True, else if it is false, it will get ignored by the system\n \nLogical conditions used in If values:\nEquals a = b\nLess than a < b\nGreater than a > b\nless than or equal to a <= b\nGreater than or equal to a >= b\nNot equal a != b\n \n                  Page [14/19]")
+    elif Page == 15:
+        Tutorial_text = str('\n ==================== \n \n More If statement examples\n \na = 5\nb = 10\n if a >= b:\n    print("a is greater than b")\nResult:\n #it wont function\n \nif a < b:\n   print(a is lesser than b")\nResult:\na is lesser than b \n \n                  Page [15/19]')
+    elif Page == 16:
+        Tutorial_text = str('\n ==================== \n \n elif\n \n elif means the system will try to check again after the first if condition resulted in False\n \n a = 5\nb = 10\n \n if a > b:\n    print("a is greater than b")\nelif a < b:\n    print("a is lesser than b")\n Result:a is lesser than b \n \n                  Page [16/19]')
+    elif Page == 17:
+        Tutorial_text = str('\n ==================== \n \n else \n \n else will allow you to provide a result if the value is False\n \na = 10\nb = 10\n \n if a > b:\n      print("a is greater than b")\nelif a < b:\n     print("a is lesser than b")\nelse:\n       print("both a and b are equals")a\nResult:both a and b are equals\n\n \n                  Page [17/19]')
+    elif Page == 18:
+        Tutorial_text = str('\n ==================== \n \n Chapter 7: While loop function\n \n with While loop function, it will attempt to execute a statement as long as it is true.\n a = 1\nwhile a < 6\n  print(a)\n a += 1\nResult:\n1\n2\n3\n4\n5\n \n or \n \n a = 6\nwhile a > 1\n  print(a)\n a -= 1\nResult:\n6\n5\n4\n3\n2\n \n Note: Be wary of accidentally triggering an infinite loop scenario, it is when a program continues to run a line of code repeatedly without an end\n  \n                  Page [18/19]')
+    elif Page == 19:
+        Tutorial_text = str('\n ==================== \n \n This is the end of the basic python tutorial, this tutorial only covers the basic functions of Python programming language\n there are still more you can do with python programming and you can do things that are not normally available to python by installing library and using import command to use the said script\n \n The purpose of learning python is because it is the most simple programming language to understand because the "language" it uses similar to english\n \n In python we use\nprint("hello world")\n \n to display a statement, in Java however\n \npublic class Main {\n  public static void main(string[] args) {\n    system.out.printIn("Hello world");\n    }\n   }\nJust to display a statement.\n \n \n \n                  Page [19/19]')
+    elif Page == 20:
+        Tutorial_text = str("\n ==================== \n \n This is a super secret challenge if you manage to get this far\n if you Enter [Quiz], you will be taking a small challenge to refresh you python knowledge.     \n  \n     Page [?/19]")
+    elif Page >= 21:
+        Tutorial_text = str("")
+        Page = 20
+    print(Tutorial_text)
+    Page_select=input("\n \ntype [Next]/[Prev]ious to navigate Page |\nType [Select] to manually select a Page | \nType [Exit] to end the program\n ____________________\n Enter:").lower()
+    if Page_select == "next":
+        Page += 1
+    elif Page_select == "prev":
+        Page -= 1
+    elif Page_select == "select":
+        Page = int(input("Enter Page number: [1/N]"))
+    elif Page_select == "exit":
+        exit()
+    elif Page_select == "quiz":
+        print("Hello world")
+        break
+
+print("===================================")
+
+Quiz_score=int(0)
+#0A B1 C2 D3 T4 5F
+Quiz_solutions=["A", "B", "C", "D", "T", "F"]
+print("Choose a letter that shows the correct answer.\n")
+print('Question 1: Which of this statement is correct?\n\nA.print("Hello world")\nB.print(Hello world)\nC.print=hello world\nD.print"(Hello world)" ')
+Quiz_q0=str(input("Answer: ")).upper()
+if Quiz_q0 == Quiz_solutions[0]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q0 != Quiz_solutions[0]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 2: which one of these, shows the correct expression?\n\nA.print(1 "out of" 3)\nB.print( 123 , "five more", 029)\nC.Print("Hello world")\nD.None of the above')
+Quiz_q1=str(input("Answer: ")).upper()
+if Quiz_q1 == Quiz_solutions[1]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q1 != Quiz_solutions[1]:
+    print("WRONG!")
+
+print("===================================")
+
+print("Question 3: Who created Python?\n\nA.James C Carls\nB.Barnes Stroheim\nC.Guido van Rossum\nD.Daniel van Rossum")
+Quiz_q2=str(input("Answer: ")).upper()
+if Quiz_q2 == Quiz_solutions[2]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q2 != Quiz_solutions[2]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 4: Which variable set up is correct?\n\nA.9=a\nB.1info=23\nC.@me=0\nD.None of the above')
+Quiz_q3=str(input("Answer: ")).upper()
+if Quiz_q3 == Quiz_solutions[3]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q3 != Quiz_solutions[3]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 5: When was Python released to the public?\n\nA.1991\nB.1999\nC.1988\nD.2001')
+Quiz_q4=str(input("Answer: ")).upper()
+if Quiz_q4 == Quiz_solutions[0]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q4 != Quiz_solutions[0]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 6: What does # do?\n \nA.Math expression\nB. It has no function\nC.Logic function\nD.Comment')
+Quiz_q5=str(input("Answer: ")).upper()
+if Quiz_q5 == Quiz_solutions[3]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q5 != Quiz_solutions[3]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 7: Which one shows the correct mathematical operation?\n\nA.x(22 & 1)\nB.y(1 + 1)\nC.z(1:2:3)\nD.None of the above')
+Quiz_q6=str(input("Answer: ")).upper()
+if Quiz_q6 == Quiz_solutions[1]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q6 != Quiz_solutions[1]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 8: What does % as a mathematical operation in Python do?\n\nA.Modulus\nB.Division\nC.Exponential\nD.negation')
+Quiz_q7=str(input("Answer: ")).upper()
+if Quiz_q7 == Quiz_solutions[0]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q7 != Quiz_solutions[0]:
+    print("WRONG!")
+
+print('Question 9: What does // represent as Mathematical operation in Python?\n\nA.Modulus\nB.Floor Division\nC.Addition\nD.Subtraction')
+Quiz_q8=str(input("Answer: ")).upper()
+if Quiz_q8 == Quiz_solutions[1]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q8 != Quiz_solutions[1]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 10: ___________=["Apple","Banana","Orange"] is an example of?\n\nA.print function\nB.Variable function\nC.List function\nD.Dictionary function ')
+Quiz_q9=str(input("Answer: ")).upper()
+if Quiz_q9 == Quiz_solutions[2]:
+    Quiz_score += 1
+    print("Correct!")
+elif Quiz_q9 != Quiz_solutions[2]:
+    print("WRONG!")
+
+print("===================================")
+
+print("Instructions: Write T if the answer is true or F if the answer is false")
+print("Question 11: 1 > 3")
+Quiz_q10=str(input("Answer: ")).upper()
+if Quiz_q10 == Quiz_solutions[5]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q10 != Quiz_solutions[5]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 12: 5 != 5')
+Quiz_q11=str(input("Answer: ")).upper()
+if Quiz_q11 == Quiz_solutions[5]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q11 != Quiz_solutions[5]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 13: 5 >= 5')
+Quiz_q12=str(input("Answer: ")).upper()
+if Quiz_q12 == Quiz_solutions[4]:
+    Quiz_score += 1
+    print("Correct!")
+elif Quiz_q12 != Quiz_solutions[4]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 14: (5 <= 5)~')
+Quiz_q13=str(input("Answer: ")).upper()
+if Quiz_q13 == Quiz_solutions[5]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q13 != Quiz_solutions[5]:
+    print("WRONG!")
+
+print("===================================")
+
+print('Question 15: List count starts at 1')
+Quiz_q14=str(input("Answer: ")).upper()
+if Quiz_q14 == Quiz_solutions[5]:
+    print("Correct!")
+    Quiz_score += 1
+elif Quiz_q14 != Quiz_solutions[5]:
+    print("WRONG!")
+
+print("===================================")
+
+print(f"Your score is:  [ {Quiz_score} ]")
+Goodbye=str(input(" "))
+if Goodbye == "Exit":
+    print("Goodbye!")
+    
